@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+    margin: 0;
+    font-size: 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+nav ul li a {
+    text-decoration: none;
+    color: #333333;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul li a:hover {
+    color: #007bff;
+}
+
+
+/* HeroSection.css */
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+}
+
+
+/* DestinationsSection.css */
+
+.destinations {
+    padding: 40px;
+}
+
+
+/* ContactForm.css */
+
+.contact {
+    padding: 40px;
+}
+
+.contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Footer.css */
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.social-media a {
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+.social-media a:hover {
+    color: #007bff;
 }
